@@ -4,22 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Non Primitive</title>
+<title>Spring Boot Demo</title>
 </head>
 <body>
-    <table>
-       <tr>
-          <td>Course code</td>
-          <td>${coursecode}</td>
-       </tr>
-       <tr>
-          <td>Course name</td>
-          <td>${cname}</td>
-       </tr>
-       <tr>
-          <td>Faculty</td>
-          <td>${faculty}</td>
-       </tr>
-    </table>
+   <h2>My First Spring Boot Application</h2>
 </body>
 </html>

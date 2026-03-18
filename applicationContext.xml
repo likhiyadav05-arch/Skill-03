@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+          http://www.springframework.org/schema/beans
+          https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--
+      XML Config:
+      - Constructor Injection (all fields)
+      - Setter Injection (course, year) (overrides constructor values to demonstrate setter injection)
+    -->
+    <bean id="student" class="com.skill4.di.Student">
+        <!-- constructor injection -->
+        <constructor-arg value="101"/>
+        <constructor-arg value="Yasaswini"/>
+        <constructor-arg value="Java Full Stack"/>
+        <constructor-arg value="2"/>
+
+        <!-- setter injection (at least two fields) -->
+        <property name="course" value="Spring Core (DI + IoC)"/>
+        <property name="year" value="3"/>
+    </bean>
+
+</beans>
